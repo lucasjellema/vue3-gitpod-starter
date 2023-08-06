@@ -3,7 +3,8 @@ tasks:
   - init: |
       cd hello-world && npm install
   - command: |
-      cd hello-world
+      cd hello-world && 
+      npm install &&
       npm run dev
 
 ports:
