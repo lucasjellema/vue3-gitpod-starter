@@ -1,9 +1,10 @@
 
 tasks:
   - init: |
+      cd hello-world && npm install
+  - command: |
       cd hello-world
-      npm install
-  - command: npm run dev
+      npm run dev
 
 ports:
   - port: 5173
