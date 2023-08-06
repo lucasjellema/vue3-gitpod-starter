@@ -1,0 +1,15 @@
+
+tasks:
+  - init: |
+      cd hello-world
+      npm install
+  - command: npm run dev
+
+ports:
+  - port: 5173
+    onOpen: open-preview
+    visibility: public
+
+vscode:
+  extensions:
+    - Vue.volar
